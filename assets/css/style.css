@@ -1,3 +1,54 @@
+body, html {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+.barra-anuncio {
+   background-color: #000000; 
+   overflow: hidden; 
+   position: relative;
+   width: 100%;
+   padding: 15px 0;
+}
+
+.track {
+   display: flex; 
+   width: fit-content;
+   animation: scrollInfinito 20s linear infinite;
+   will-change: transform; 
+}
+
+.contenido {
+   white-space: nowrap; 
+   padding-right: 0;
+   min-width: 100vw;    
+   text-align: center;
+   flex-shrink: 0;     
+}
+
+.contenido a {
+   color: #ffffff;
+   text-decoration: none;
+   font-size: 18px;
+   display: block;
+}
+
+.barra-anuncio:hover .track {
+   animation-play-state: paused;
+}
+
+@keyframes scrollInfinito {
+   0% {
+       transform: translateX(0);
+   }
+   100% {
+
+       transform: translateX(-50%);
+   }
+}
+
 #seccion-productos .card img {
 aspect-ratio: 4/3;
 }
+
