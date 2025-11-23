@@ -60,6 +60,14 @@ body, html {
    background-color: transparent; 
 }
 
+.navbar-custom2 {
+   top: 0;            
+   left: 0;
+   width: 100%;
+   z-index: 10;       
+   background-color: rgb(112, 98, 132); 
+}
+
 
 .navbar-brand {
    font-family: "Oswald", sans-serif;
